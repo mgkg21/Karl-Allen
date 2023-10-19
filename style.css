@@ -11,6 +11,11 @@ h1{
 	font-size: 50px;
 }
 
+h2{
+	font-weight: 800;
+	font-size: 50px;
+}
+
 h3{
 	font-weight: bold;
 	font-size: 30px;
@@ -19,6 +24,12 @@ h3{
 h4{
 	font-weight: bold;
 	font-size: 20px;
+}
+
+p{
+	font-weight: bold;
+	font-size: 30px;
+	margin: 30px 0;
 }
 
 .wrapper{
@@ -95,20 +106,62 @@ button.cta.alt{
 	box-shadow: 0 0 0 10px rgba(0, 0, 0, .15);
 }
 
+nav{
+	height: 100px;
+	background-color: white;
+	box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
+	position: sticky;
+	top: 0;
+}
+
+nav .logo{
+	display: block;
+	width: 60px;
+	height: 60px;
+	position: absolute; top: 40%; left: 0;
+	margin-top: -20px;
+	margin-left: 30px;
+	background: url(img/logo.jpg) no-repeat 0 0;
+	background-size: 100%;
+	overflow: hidden;
+	text-indent: -999px;
+}
+
+nav ul{
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li{
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: right;
+}
+
+nav ul li a{
+	display: block;
+	height: 100%;
+	box-sizing: border-box;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #111111;
+	text-decoration: none;
+	padding: 35px 10px;
+	line-height: 30px;
+}
+
+.more-info{
+	text-align: center;
+}
+
 /*
 
-<div class="karl-banner">
-		<div class="wrapper">
-			<h4>Karl from Heart Soul presents</h4>
-			<h1>This is an <br/>
-			example site of project.</h1>
-			<h3>I create this site <br/>
-			as an example site of my project.</h3>
-			<a class="cta alt" href="#more-info" >Read More</a>
-		</div>
-		<div class="character1"></div>
-		<div class="character2"></div>
-		<div class="character3"></div>
+<div class="more-info" id="more-info">
+		<h2>JAK Coffee</h2>
+		<p>Your daily morning <span class="hilight">coffee</span> provides you with more than just an energy boost. It's also shown to protect us against Type 2 diabetes and liver diseases as well as lowering the risks of heart failure.</p>
+		<button class="cta">Sign Me Up!</button>
 	</div>
 
 */
